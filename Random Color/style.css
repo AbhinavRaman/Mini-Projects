@@ -1,3 +1,11 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 div{
     display: flex;
     align-items: center;
@@ -9,7 +17,7 @@ button{
     width: 20vw;
     margin: 20px;
     border: 2px solid black;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     font-size: large;
     font-weight: bold;
@@ -18,3 +26,8 @@ button{
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+  
+  button:active {
+    transform: scale(0.95);
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.3);
+  }
