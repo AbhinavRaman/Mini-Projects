@@ -4,8 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ad2b5ab114.js" crossorigin="abhinav"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
 </head>
-<body>
-  
+<body class="bg-gradient-to-t from-[#fff] to-gray-700 h-screen">
+  <nav class="navbar w-full h-14 flex justify-between items-center border-b p-4 bg-gray-700">
+    <!-- Logo -->
+    <div class="logo flex items-center gap-1">
+      <i class="fa-solid fa-utensils fa-lg" style="color: #DF6853;"></i>
+      <h1 class="font-bold text-white text-2xl">Chef's Kitchen.</h1>
+    </div>
+
+    <!-- Hamburger Icon (for mobile) -->
+    <div class="md:hidden text-white cursor-pointer" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars fa-xl"></i>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="sectionTags hidden md:flex justify-around items-center font-bold text-gray-400 space-x-4">
+      <h3 class="cursor-pointer hover:underline">Home</h3>
+      <h3 class="cursor-pointer hover:underline">About Us</h3>
+      <h3 class="cursor-pointer hover:underline">Recipe</h3>
+      <h3 class="cursor-pointer hover:underline">Gallery</h3>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons hidden md:flex gap-1 items-center">
+      <button class="rounded-2xl border border-[#DF6853] px-3 py-1 hover:bg-[#DF6853] cursor-pointer font-bold text-white hover:text-black">Sign In</button>
+      <button class="rounded-2xl border bg-[#DF6853] px-3 py-1 hover:bg-transparent cursor-pointer font-bold hover:text-white">Sign Up</button>
+    </div>
+  </nav>  
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden flex flex-col items-center bg-gray-700 text-white font-bold p-4 space-y-2 md:hidden">
+    <h3 class="cursor-pointer hover:underline">Home</h3>
+    <h3 class="cursor-pointer hover:underline">About Us</h3>
+    <h3 class="cursor-pointer hover:underline">Recipe</h3>
+    <h3 class="cursor-pointer hover:underline">Gallery</h3>
+    <button class="rounded-2xl border border-[#DF6853] w-1/2 hover:bg-[#DF6853] cursor-pointer">Sign In</button>
+    <button class="rounded-2xl border bg-[#DF6853] w-1/2 hover:bg-transparent cursor-pointer">Sign Up</button>
+  </div>
 </body>
 </html>
