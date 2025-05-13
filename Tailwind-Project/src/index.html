@@ -5,19 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ad2b5ab114.js" crossorigin="abhinav"></script>
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    }
-  </script>
 </head>
-<body class="bg-gradient-to-t from-gray-400 via-gray-500 to-gray-800 h-screen">
-  <nav class="navbar w-full h-16 flex justify-between items-center border-b p-4 bg-gray-700">
+<body class="bg-gray-800">
+  <!-- Navbar -->
+  <nav class="navbar w-full h-16 flex justify-between items-center p-4 bg-gray-800">
     <!-- Logo -->
     <div class="logo flex items-center gap-1">
       <i class="fa-solid fa-utensils fa-2xl" style="color: #DF6853;"></i>
-      <h1 class="font-bold text-white text-4xl">Chef's Kitchen.</h1>
+      <h1 class="font-bold text-white text-3xl">Cookie Cooks</h1>
     </div>
 
     <!-- Hamburger Icon (for mobile) -->
@@ -34,9 +29,9 @@
     </div>
 
     <!-- Buttons -->
-    <div class="buttons hidden md:flex gap-1 items-center">
-      <button class="rounded-2xl border border-[#DF6853] px-3 py-1 hover:bg-[#DF6853] cursor-pointer font-bold text-white hover:text-black">Sign In</button>
-      <button class="rounded-2xl border bg-[#DF6853] px-3 py-1 hover:bg-transparent cursor-pointer font-bold hover:text-white">Sign Up</button>
+    <div class="buttons hidden md:flex gap-2 items-center">
+      <button class="rounded-2xl border border-[#DF6853] px-4 py-1 hover:bg-[#DF6853] cursor-pointer font-bold text-white hover:text-black">Sign In</button>
+      <button class="rounded-2xl border bg-[#DF6853] px-4 py-1 hover:bg-transparent cursor-pointer font-bold hover:text-white">Sign Up</button>
     </div>
   </nav>  
 
@@ -46,24 +41,66 @@
     <h3 class="cursor-pointer hover:underline">About Us</h3>
     <h3 class="cursor-pointer hover:underline">Recipe</h3>
     <h3 class="cursor-pointer hover:underline">Gallery</h3>
-    <button class="rounded-2xl border border-[#DF6853] w-1/2 hover:bg-[#DF6853] cursor-pointer">Sign In</button>
-    <button class="rounded-2xl border bg-[#DF6853] w-1/2 hover:bg-transparent cursor-pointer">Sign Up</button>
+    <button class="rounded-2xl border border-[#DF6853] w-full px-3 py-1 hover:bg-[#DF6853] cursor-pointer">Sign In</button>
+    <button class="rounded-2xl border bg-[#DF6853] w-full px-3 py-1 hover:bg-transparent cursor-pointer">Sign Up</button>
   </div>
 
   <!-- Main Section -->
-  <section class="Main flex items-center w-full">
-    <div class="leftDiv w-1/2 inline-block items-center justify-center align-middle">
-      <h1 class="font-bold text-8xl text-white m-4">Cook anything with the experts</h1>
-      <p class="text-2xl m-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tenetur sit qui inventore adipisci ipsum.</p>
-      <div class="flex w-full justify-center align-middle gap-3 m-4">
-        <button class="rounded-2xl border border-[#DF6853] px-3 py-1 hover:bg-[#DF6853] cursor-pointer font-bold hover:text-black">Lets Cook</button>
-        <button class="rounded-2xl border border-[#DF6853] px-3 py-1 hover:bg-[#DF6853] cursor-pointer font-bold hover:text-black">Explore Now</button>
+  <section class="Main flex flex-col md:flex-row items-center justify-center w-full p-4 bg-gradient-to-t from-gray-400 via-gray-500 to-gray-800">
+    <!-- Left Div -->
+    <div class="leftDiv w-full md:w-1/2 flex flex-col items-center justify-center text-center md:text-left mb-6 md:mb-0">
+      <h1 class="font-bold text-4xl md:text-6xl lg:text-7xl text-white m-2">Cook anything with the experts</h1>
+      <p class="text-lg md:text-2xl text-gray-200 m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tenetur sit qui inventore adipisci ipsum.</p>
+      <div class="flex flex-col md:flex-row gap-3 justify-center items-center m-4">
+        <button class="rounded-2xl border border-black bg-[#DF6853] px-4 py-2 hover:bg-gray-800 cursor-pointer font-bold hover:text-white hover:border-black">Let's Cook</button>
+        <button class="rounded-2xl border border-black px-4 py-2 bg-gray-800 text-white hover:bg-[#DF6853] cursor-pointer font-bold hover:text-black">Explore Now</button>
       </div>
     </div>
 
-    <div class="rightDiv w-1/2 flex justify-center">
-      <img src="./Assets/banner-image.png" alt="cookiecooks">
+    <!-- Right Div -->
+    <div class="rightDiv w-full md:w-1/2 flex justify-center">
+      <img src="./Assets/banner-image.png" alt="cookiecooks" class="w-80 md:w-full object-contain">
     </div>
   </section>
+
+<!-- Feature Section -->
+<section class="bg-black w-full py-16 flex flex-col justify-center items-center">
+  <div class="text-center mb-8">
+    <h3 class="text-[#DF8653] text-xl md:text-2xl mb-2">FEATURES</h3>
+    <h2 class="text-white font-bold text-2xl md:text-4xl">Get a lot of interesting features.</h2>
+  </div>
+
+  <div class="cards flex flex-wrap justify-center gap-6 w-[90%] lg:w-[80%]">
+    <div class="card relative w-[90%] sm:w-[45%] lg:w-[20%] p-6 flex flex-col items-center rounded-2xl bg-gradient-to-b from-gray-700 to-black shadow-xl">
+      <img src="./Assets/featureonee.jpg" alt="featureOne" class="w-20 h-20 mb-4 rounded-full">
+      <h3 class="font-bold text-white mb-2">Menu Variations</h3>
+      <p class="text-gray-400 text-center mb-2">Sed ut perspiciatis unde omnis iste natus error</p>
+      <a href="#" class="text-[#DF8653] hover:underline">Learn More ></a>
+    </div>
+
+    <div class="card relative w-[90%] sm:w-[45%] lg:w-[20%] p-6 flex flex-col items-center rounded-2xl bg-gradient-to-b from-gray-700 to-black shadow-xl">
+      <img src="./Assets/featuretwoo.png" alt="featureTwo" class="w-20 h-20 mb-4 rounded-full">
+      <h3 class="font-bold text-white mb-2">Cooking War</h3>
+      <p class="text-gray-400 text-center mb-2">Sed ut perspiciatis unde omnis iste natus error</p>
+      <a href="#" class="text-[#DF8653] hover:underline">Learn More ></a>
+    </div>
+
+    <div class="card relative w-[90%] sm:w-[45%] lg:w-[20%] p-6 flex flex-col items-center rounded-2xl bg-gradient-to-b from-gray-700 to-black shadow-xl">
+      <img src="./Assets/featureThree.png" alt="featureThree" class="w-20 h-20 mb-4 rounded-full">
+      <h3 class="font-bold text-white mb-2">Best Chef</h3>
+      <p class="text-gray-400 text-center mb-2">Sed ut perspiciatis unde omnis iste natus error</p>
+      <a href="#" class="text-[#DF8653] hover:underline">Learn More ></a>
+    </div>
+
+    <div class="card relative w-[90%] sm:w-[45%] lg:w-[20%] p-6 flex flex-col items-center rounded-2xl bg-gradient-to-b from-gray-700 to-black shadow-xl">
+      <img src="./Assets/featurefourr.avif" alt="featureFour" class="w-20 h-20 mb-4 rounded-full">
+      <h3 class="font-bold text-white mb-2">Fast Food</h3>
+      <p class="text-gray-400 text-center mb-2">Sed ut perspiciatis unde omnis iste natus error</p>
+      <a href="#" class="text-[#DF8653] hover:underline">Learn More ></a>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
