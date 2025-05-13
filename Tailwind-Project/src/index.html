@@ -12,17 +12,17 @@
     }
   </script>
 </head>
-<body class="bg-gradient-to-t from-[#fff] to-gray-700 h-screen">
-  <nav class="navbar w-full h-14 flex justify-between items-center border-b p-4 bg-gray-700">
+<body class="bg-gradient-to-t from-gray-400 via-gray-500 to-gray-800 h-screen">
+  <nav class="navbar w-full h-16 flex justify-between items-center border-b p-4 bg-gray-700">
     <!-- Logo -->
     <div class="logo flex items-center gap-1">
-      <i class="fa-solid fa-utensils fa-lg" style="color: #DF6853;"></i>
-      <h1 class="font-bold text-white text-2xl">Chef's Kitchen.</h1>
+      <i class="fa-solid fa-utensils fa-2xl" style="color: #DF6853;"></i>
+      <h1 class="font-bold text-white text-4xl">Chef's Kitchen.</h1>
     </div>
 
     <!-- Hamburger Icon (for mobile) -->
     <div class="md:hidden text-white cursor-pointer" onclick="toggleMenu()">
-      <i class="fa-solid fa-bars fa-xl"></i>
+      <i class="fa-solid fa-bars fa-2xl"></i>
     </div>
 
     <!-- Navigation Links -->
@@ -49,5 +49,21 @@
     <button class="rounded-2xl border border-[#DF6853] w-1/2 hover:bg-[#DF6853] cursor-pointer">Sign In</button>
     <button class="rounded-2xl border bg-[#DF6853] w-1/2 hover:bg-transparent cursor-pointer">Sign Up</button>
   </div>
+
+  <!-- Main Section -->
+  <section class="Main flex items-center w-full">
+    <div class="leftDiv w-1/2 inline-block items-center justify-center align-middle">
+      <h1 class="font-bold text-8xl text-white m-4">Cook anything with the experts</h1>
+      <p class="text-2xl m-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tenetur sit qui inventore adipisci ipsum.</p>
+      <div class="flex w-full justify-center align-middle gap-3 m-4">
+        <button class="rounded-2xl border border-[#DF6853] px-3 py-1 hover:bg-[#DF6853] cursor-pointer font-bold hover:text-black">Lets Cook</button>
+        <button class="rounded-2xl border border-[#DF6853] px-3 py-1 hover:bg-[#DF6853] cursor-pointer font-bold hover:text-black">Explore Now</button>
+      </div>
+    </div>
+
+    <div class="rightDiv w-1/2 flex justify-center">
+      <img src="./Assets/banner-image.png" alt="cookiecooks">
+    </div>
+  </section>
 </body>
 </html>
