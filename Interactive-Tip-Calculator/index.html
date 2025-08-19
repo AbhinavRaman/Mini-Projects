@@ -3,12 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interactive Tip Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Tip Calculator
-    
-    <script src="script.js"></script>
+    <!-- Main container for the entire calculator -->
+    <div class="calculator-container">
+
+        <!-- Section for all user inputs -->
+        <div class="input-section">
+
+            <!-- Bill Amount Input Group -->
+            <div class="form-control">
+                <label for="bill">Bill</label>
+                <input type="number" id="bill" class="input-field" placeholder="0" min="0">
+            </div>
+
+            <div class="form-control">
+                <p>Select Tip %</p>
+
+                <div class="tip-buttons-container">
+                    <button type="button" class="tip-percent-button" value="5">5%</button>
+                    <button type="button" class="tip-percent-button" value="10">10%</button>
+                    <button type="button" class="tip-percent-button" value="15">15%</button>
+                    <button type="button" class="tip-percent-button" value="25">25%</button>
+                    <button type="button" class="tip-percent-button" value="50">50%</button>
+
+                    <input type="number" id="custom-tip" class="input-field custom-tip-input" placeholder="Custom" min="0">
+                </div>
+            </div>
+
+        </div>
+        <!-- End of input-section -->
+
+        <!-- Output/Results section will go here later -->
+
+    </div>
+    <!-- End of calculator-container -->
+
+    <script src="script.js" defer></script>
 </body>
 </html>
