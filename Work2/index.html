@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <section id="sidebarSection">
+            <div id="logo">MyDashboard</div>
+            <nav id="sidebarNav">
+                <a href="pages/customer.html" target="_blank">Customer</a>
+                <a href="pages/product.html" target="_blank">Product</a>
+                <a href="pages/settings.html" target="_blank">Settings</a>
+            </nav>
+        </section>
+
+		<div id="contentSection">
+			<section id="topInfoBar">
+				<input type="search" placeholder="🔍Search" class="search">
+				<div id="infoCards">
+					<div class="infoCard">
+						<h3>Users</h3>
+						<p>1,234</p>
+					</div>
+					<div class="infoCard">
+						<h3>Sales</h3>
+						<p>$56,789</p>
+					</div>
+					<div class="infoCard">
+						<h3>Performance</h3>
+						<p>89%</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="hero-section">
+				<div class="customers-card">
+					<div class="customers-card__header">
+						<div class="customers-card__title">
+							<h2>All Customers</h2>
+							<a href="#" class="customers-card__filter">Active Members</a>
+						</div>
+						<div class="customers-card__actions">
+							<div class="input-icon">
+								<input type="search" placeholder="Search" aria-label="Search customers">
+							</div>
+							<div class="sort-by">
+								<label for="sortSelect">Short by :</label>
+								<select id="sortSelect" aria-label="Sort customers">
+									<option>Newest</option>
+									<option>Oldest</option>
+									<option>A - Z</option>
+									<option>Z - A</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="table-wrapper">
+						<table class="customers-table">
+							<thead>
+								<tr>
+									<th>Customer Name</th>
+									<th>Company</th>
+									<th>Phone Number</th>
+									<th>Email</th>
+									<th>Country</th>
+									<th>Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Jane Cooper</td>
+									<td>Microsoft</td>
+									<td>(225) 555-0118</td>
+									<td>jane@microsoft.com</td>
+									<td>United States</td>
+									<td><span class="badge badge--success">Active</span></td>
+								</tr>
+								<tr>
+									<td>Floyd Miles</td>
+									<td>Yahoo</td>
+									<td>(205) 555-0100</td>
+									<td>floyd@yahoo.com</td>
+									<td>Kiribati</td>
+									<td><span class="badge badge--danger">Inactive</span></td>
+								</tr>
+								<tr>
+									<td>Ronald Richards</td>
+									<td>Adobe</td>
+									<td>(302) 555-0107</td>
+									<td>ronald@adobe.com</td>
+									<td>Israel</td>
+									<td><span class="badge badge--danger">Inactive</span></td>
+								</tr>
+								<tr>
+									<td>Marvin McKinney</td>
+									<td>Tesla</td>
+									<td>(252) 555-0126</td>
+									<td>marvin@tesla.com</td>
+									<td>Iran</td>
+									<td><span class="badge badge--success">Active</span></td>
+								</tr>
+								<tr>
+									<td>Jerome Bell</td>
+									<td>Google</td>
+									<td>(629) 555-0129</td>
+									<td>jerome@google.com</td>
+									<td>Réunion</td>
+									<td><span class="badge badge--success">Active</span></td>
+								</tr>
+								<tr>
+									<td>Kathryn Murphy</td>
+									<td>Microsoft</td>
+									<td>(406) 555-0120</td>
+									<td>kathryn@microsoft.com</td>
+									<td>Curaçao</td>
+									<td><span class="badge badge--success">Active</span></td>
+								</tr>
+								<tr>
+									<td>Jacob Jones</td>
+									<td>Yahoo</td>
+									<td>(208) 555-0112</td>
+									<td>jacob@yahoo.com</td>
+									<td>Brazil</td>
+									<td><span class="badge badge--success">Active</span></td>
+								</tr>
+								<tr>
+									<td>Kristin Watson</td>
+									<td>Facebook</td>
+									<td>(704) 555-0127</td>
+									<td>kristin@facebook.com</td>
+									<td>Åland Islands</td>
+									<td><span class="badge badge--danger">Inactive</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+		</div>
+        
+    </div>
+</body>
+</html>
