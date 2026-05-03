@@ -50,13 +50,17 @@ main, section{
 
 section{
     padding: var(--space-2xl);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: var(--space-lg);
 }
 
 /* Infos */
 section .infos{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .info{
@@ -66,3 +70,14 @@ section .infos{
 }
 
 /* Board */
+section .board{
+    border: 1px solid var(--border-primary-color);
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(80px, 1fr));
+}
+
+.block{
+    border: 1px solid var(--border-primary-color);
+}
